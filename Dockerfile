@@ -4,11 +4,11 @@ MAINTAINER Devin Matte <matted@csh.rit.edu>
 USER root
 ENV APP_PATH=/opt/app-root/src
 RUN cd $APP_PATH && \
-    wget -q https://files.phpmyadmin.net/phpMyAdmin/4.7.3/phpMyAdmin-4.7.3-all-languages.zip && \
-    unzip phpMyAdmin-4.7.3-all-languages.zip && \
-    rm -f phpMyAdmin-4.7.3-all-languages.zip && \
-    mv phpMyAdmin-4.7.3-all-languages/* ./  && \
-    rm -rf phpMyAdmin-4.7.3-all-languages && \
+    wget -q https://files.phpmyadmin.net/phpMyAdmin/4.8.0/phpMyAdmin-4.8.0-all-languages.zip && \
+    unzip phpMyAdmin-4.8.0-all-languages.zip && \
+    rm -f phpMyAdmin-4.8.0-all-languages.zip && \
+    mv phpMyAdmin-4.8.0-all-languages/* ./  && \
+    rm -rf phpMyAdmin-4.8.0-all-languages && \
     rm -f config.sample.inc.php && \
     chown -R 1001:0 $APP_PATH && \
     chmod -R ug+rwx $APP_PATH
