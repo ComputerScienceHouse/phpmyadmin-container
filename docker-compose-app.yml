@@ -1,4 +1,0 @@
-pma:
-  extends:
-    file: phpmyadmin/docker-compose.yml
-    service: application

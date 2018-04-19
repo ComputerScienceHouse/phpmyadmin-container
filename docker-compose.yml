@@ -1,4 +1,10 @@
-fedora_app_pma:
-  extends:
-    file: phpmyadmin/docker-compose.yml
-    service: application
+application:
+  build: ./
+  container_name: "application-phpmyadmin"
+  mem_limit: 500m
+  memswap_limit: 500m
+  cpu_shares: 2
+  ports:
+    - "9215:8080"
+  volumes:
+    - "/tmp/container/phpmyadmin:/data"
