@@ -1,4 +1,4 @@
-fedora_app_pma:
+pma:
   extends:
     file: phpmyadmin/docker-compose.yml
     service: application
